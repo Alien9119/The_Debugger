@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 /**
 
+Autor: Alexis*/
+
 public class WeaponAim : MonoBehaviour
 {
     private Vector3 objetivo;
