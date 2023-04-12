@@ -1,0 +1,37 @@
+FAQ:
+Q: Can I use on my free/commercial game?
+A: Yes you can use.
+
+Q: Do I need to credit you?
+A: Yes, credit is only needed on my free assets. And you only need to credit me if you use the pngs spriteseheets or black and white versions, since the shader is CC0 license .
+
+Q: Can I use the Godot Shader in my project?
+A: Yes! but the godot Shader its not mine! its from @retr0_dev and you can get the original link in the readme.txt file, the shader is CC0 license
+
+Q: Can I use on my twitch cover?
+A: Yes you can use in anything.
+
+Q: Can I modify this asset?
+A: Yes of course!
+
+Q: Can I redistribute if I change this asset?
+A: No, you can't distibutte this asset in any way, even if you modify.
+
+Q: Can I use in more than one game?
+A: Yes you can use in many games as you like.
+
+Q: Why There's some backgrounds that are in spritesheets and ones in black and white?
+A: The Spritesheets are for use in any engine jus as an animation (of 6 or 4 frames)
+   they are very simples, the Black and white are for shader porpuses, you need to apply
+   an pallet to them.
+
+Q: What's the difference between the spriteshet and the Shaders?
+   The Spritesheet you can use in most engines as an animation, the black and white pngs
+   are for shaders, you can use the godot example or even in unity (but I don't have an example :( )
+
+Q: Why my background doesnt look like the ones in Earthbound/Mother?
+A: The Earthbound backgrounds uses shaders, you can try the Godot example to see
+   how they work
+
+Q: Can I have the same result just using the png?
+A: No.. But they are still cool.
