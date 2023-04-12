@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 /**
 
-Autor: Alexis*/
+Autor: Alexis
+Autor: Roberto Mtz
+ 
 
 public class WeaponAim : MonoBehaviour
 {
