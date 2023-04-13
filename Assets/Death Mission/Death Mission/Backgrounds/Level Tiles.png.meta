@@ -1967,6 +1967,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Level Tiles_87
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 29
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5d2af5de39a8a44b8b6d9e9003ff73
+      internalID: -1986540408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Tiles_88
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 29
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22811a0e09a0c440bac4474910fe320
+      internalID: 1982938373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Tiles_89
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 29
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab29f16b66bc674bb1676a1e28f9497
+      internalID: 1821482391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2064,6 +2127,9 @@ TextureImporter:
       Level Tiles_84: -2071947656
       Level Tiles_85: -254507513
       Level Tiles_86: 759090244
+      Level Tiles_87: -1986540408
+      Level Tiles_88: 1982938373
+      Level Tiles_89: 1821482391
       Level Tiles_9: 387071512
   spritePackingTag: 
   pSDRemoveMatte: 0
