@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bala : MonoBehaviour
 {
     [SerializeField] private float velocidad;
-    [SerializeField] private float daño;
+    [SerializeField] private float daÃ±o;
 
     private SpriteRenderer spriteRenderer;
 
@@ -28,7 +28,7 @@ public class Bala : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<Enemigo>().TomarDaño(daño);
+            other.GetComponent<Enemigo>().TomarDaÃ±o(daÃ±o);
             Destroy(gameObject);
         }
     }
