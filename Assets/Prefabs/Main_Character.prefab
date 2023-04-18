@@ -159,12 +159,12 @@ GameObject:
   - component: {fileID: 9033259588908777380}
   - component: {fileID: 9033259588908777385}
   - component: {fileID: 9033259588908777382}
-  - component: {fileID: 9033259588908777383}
-  - component: {fileID: 9033259588908777387}
+  - component: {fileID: 1257343442988290364}
   - component: {fileID: 9033259588908777384}
+  - component: {fileID: 9033259588908777383}
   m_Layer: 0
   m_Name: Main_Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -257,23 +257,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &9033259588908777383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9033259588908777381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 615ec1b27a66850488d1cddaa4d50998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocityY: 3
-  velocityX: 3
-  Gun: {fileID: 9033259587664960229}
---- !u!61 &9033259588908777387
-BoxCollider2D:
+--- !u!70 &1257343442988290364
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -286,18 +271,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.19, y: 0.29}
-    newSize: {x: 0.19, y: 0.29}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 0.19, y: 0.29}
-  m_EdgeRadius: 0
+  m_Direction: 0
 --- !u!50 &9033259588908777384
 Rigidbody2D:
   serializedVersion: 4
@@ -319,6 +294,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &9033259588908777383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9033259588908777381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615ec1b27a66850488d1cddaa4d50998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityY: 3
+  velocityX: 3
+  Gun: {fileID: 9033259587664960229}
+  canMove: 0
 --- !u!1001 &391066178931385952
 PrefabInstance:
   m_ObjectHideFlags: 0
