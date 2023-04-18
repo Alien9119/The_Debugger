@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 8709618892188387433}
   - component: {fileID: 8709618892188387432}
   m_Layer: 5
-  m_Name: Character Status Bar
+  m_Name: Character_Status_Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 8709618892418868490}
   - component: {fileID: 8709618892418868493}
   m_Layer: 5
-  m_Name: HP Bar
+  m_Name: HP_Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -19,8 +19,11 @@ public class CharMovements : MonoBehaviour
 
     public GameObject Gun;
 
+    public bool canMove;
+
     void Start()
     {
+        canMove = true;
         rigb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
@@ -29,25 +32,35 @@ public class CharMovements : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Controla el movimiento del jugador
-        float movHorizontal = Input.GetAxis("Horizontal");
-        float movVertical = Input.GetAxis("Vertical");
-        velocidad.y = movVertical * velocityY;
-        velocidad.x = movHorizontal * velocityX;
-        rigb.velocity = velocidad;
-
-        //Manda variable de velocidad al animador
-        anim.SetFloat("movimiento", Mathf.Abs(rigb.velocity.x + rigb.velocity.y));
-
-        //Invertir la dirección cuando personaje apunta hacia atras
-        float ang = Gun.GetComponentInChildren<CambiarRotacion>().anguloGrados;
-        if(ang < 80 && ang > -80)
+        if (canMove)
         {
-            SpriteRenderer.flipX = false;
+            //Controla el movimiento del jugador
+            float movHorizontal = Input.GetAxis("Horizontal");
+            float movVertical = Input.GetAxis("Vertical");
+            velocidad.y = movVertical * velocityY;
+            velocidad.x = movHorizontal * velocityX;
+            rigb.velocity = velocidad;
+
+            //Manda variable de velocidad al animador
+            anim.SetFloat("movimiento", Mathf.Abs(rigb.velocity.x + rigb.velocity.y));
+
+            //Invertir la dirección cuando personaje apunta hacia atras
+            float ang = Gun.GetComponentInChildren<CambiarRotacion>().anguloGrados;
+            if (ang < 80 && ang > -80)
+            {
+                SpriteRenderer.flipX = false;
+            }
+            else if (ang > 80 || ang < -80)
+            {
+                SpriteRenderer.flipX = true;
+            }
         }
-        else if(ang > 80 || ang < -80)
+
+        if (!canMove)
         {
-            SpriteRenderer.flipX = true;
+            velocidad.y = 0;
+            velocidad.x = 0;
+            rigb.velocity = velocidad;
         }
     }
 }
