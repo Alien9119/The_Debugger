@@ -5,25 +5,18 @@ using UnityEngine;
 public class StartingConversation : MonoBehaviour
 {
     public GameObject Gun;
-    
+
+    private Disparo shootScript;
     private CharMovements moveScript;
     private SpriteRenderer SpriteBody;
     private SpriteRenderer SpriteGun;
 
-    private bool x;
-
     void Start()
     {
-        x = true;
+        shootScript = GetComponentInChildren<Disparo>();
         moveScript = GetComponent<CharMovements>();
         SpriteBody = GetComponent<SpriteRenderer>();
         SpriteGun = Gun.GetComponentInChildren<SpriteRenderer>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(x)
         StartCoroutine(EventsTimeline());
     }
 
@@ -32,12 +25,13 @@ public class StartingConversation : MonoBehaviour
         SpriteBody.enabled = false;
         SpriteGun.enabled = false;
         moveScript.canMove = false;
-        yield return new WaitForSeconds(9f);
+        shootScript.canShoot = false;
+        yield return new WaitForSeconds(47f);
         SpriteBody.enabled = true;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         SpriteGun.enabled = true;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         moveScript.canMove = true;
-        x = false;
+        shootScript.canShoot = true;
     }
 }

@@ -17,7 +17,7 @@ public class RemoveJoe : MonoBehaviour
         SpriteR.flipX = true;
         yield return new WaitForSeconds(2f);
         SpriteR.flipX = false;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(43f);
         SpriteR.enabled = false;
     }
 

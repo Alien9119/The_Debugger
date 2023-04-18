@@ -1974,7 +1974,7 @@ TextureImporter:
         x: 176
         y: 29
         width: 32
-        height: 50
+        height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1995,9 +1995,9 @@ TextureImporter:
         x: 10
         y: 29
         width: 37
-        height: 50
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2016,9 +2016,9 @@ TextureImporter:
         x: 77
         y: 29
         width: 41
-        height: 50
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

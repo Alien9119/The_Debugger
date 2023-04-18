@@ -37,7 +37,8 @@ public class Door_Control : MonoBehaviour
             anim.SetBool("Close", false);
             anim.SetBool("Open", true);
             barrierCollider.enabled = false;
-            wallSprite.enabled = true;
+
+            StartCoroutine(Delay());
         }
     }
     
@@ -49,5 +50,11 @@ public class Door_Control : MonoBehaviour
             anim.SetBool("Close", true);
             wallSprite.enabled = false;
         }
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.31f);
+        wallSprite.enabled = true;
     }
 }

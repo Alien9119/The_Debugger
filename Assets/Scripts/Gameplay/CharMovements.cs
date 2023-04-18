@@ -55,5 +55,12 @@ public class CharMovements : MonoBehaviour
                 SpriteRenderer.flipX = true;
             }
         }
+
+        if (!canMove)
+        {
+            velocidad.y = 0;
+            velocidad.x = 0;
+            rigb.velocity = velocidad;
+        }
     }
 }
