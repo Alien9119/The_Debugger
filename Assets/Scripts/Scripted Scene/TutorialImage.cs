@@ -14,7 +14,7 @@ public class TutorialImage : MonoBehaviour
 
     IEnumerator EventsTimeline()
     {
-        yield return new WaitForSeconds(49f);
+        yield return new WaitForSeconds(50f);
         SpriteR.enabled = true;
     }
 }

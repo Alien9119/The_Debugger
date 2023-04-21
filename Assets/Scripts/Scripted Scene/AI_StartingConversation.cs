@@ -17,5 +17,7 @@ public class AI_StartingConversation : MonoBehaviour
     {
         yield return new WaitForSeconds(8f);
         SpriteR.enabled = true;
+        yield return new WaitForSeconds(44f);
+        SpriteR.enabled = false;
     }
 }

@@ -39,7 +39,7 @@ public class Player_Invasion : MonoBehaviour
     {
         moveScript.canMove = false;
         shootScript.canShoot = false;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(17f);
         moveScript.canMove = true;
         shootScript.canShoot = true;
     }

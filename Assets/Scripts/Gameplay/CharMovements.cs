@@ -61,6 +61,17 @@ public class CharMovements : MonoBehaviour
             velocidad.y = 0;
             velocidad.x = 0;
             rigb.velocity = velocidad;
+            anim.SetFloat("movimiento", 0);
+
+            float ang = Gun.GetComponentInChildren<CambiarRotacion>().anguloGrados;
+            if (ang < 80 && ang > -80)
+            {
+                SpriteRenderer.flipX = false;
+            }
+            else if (ang > 80 || ang < -80)
+            {
+                SpriteRenderer.flipX = true;
+            }
         }
     }
 }

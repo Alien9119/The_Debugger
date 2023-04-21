@@ -13,9 +13,9 @@ public class Dialogue : MonoBehaviour
 
     void Awake()
     {
-        seconds = new float[13] { 5, 3, 5, 5, 6, 5, 2, 4, 1, 3, 2, 1, 2 };
-        velocity = new float[13] { 0.06f, 0.06f, 0.05f, 0.05f, 0.04f, 0.05f, 0.06f, 0.05f, 0.04f,
-        0.05f, 0.04f, 0.03f, 0.05f};
+        seconds = new float[14] { 5, 3, 5, 5, 6, 5, 2, 4, 1, 3, 2, 1, 3, 3 };
+        velocity = new float[14] { 0.06f, 0.06f, 0.05f, 0.05f, 0.04f, 0.05f, 0.06f, 0.05f, 0.04f,
+        0.05f, 0.04f, 0.03f, 0.06f, 0.06f};
         messages = new Queue<string>();
         messageText = transform.Find("Character_dialogue").GetComponent<TMP_Text>();
     }
@@ -40,7 +40,8 @@ public class Dialogue : MonoBehaviour
         messages.Enqueue("No te preocupes mucho, el trabajo puede ser divertido");
         messages.Enqueue("Mientras te mantengas con vida");
         messages.Enqueue("Eh??");
-        messages.Enqueue("En fin aqui esta tu equipamiento");
+        messages.Enqueue("Aqui tienes tu uniforme y arma");
+        messages.Enqueue("Cuando estes listo procede al siguiente cuarto");
 
         int index = 0;
         int index1 = 0;

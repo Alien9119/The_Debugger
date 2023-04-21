@@ -67,7 +67,7 @@ public class UI_StartingConversation : MonoBehaviour
         DialoguePanelAI.enabled = true;
         DialoguePanelPlayer.enabled = false;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(6f);
 
         messageText.enabled = false;
         DialoguePanelAI.enabled = false;
