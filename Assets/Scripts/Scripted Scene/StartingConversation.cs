@@ -6,14 +6,15 @@ public class StartingConversation : MonoBehaviour
 {
     public GameObject Gun;
 
-    private Disparo shootScript;
+    private Disparo_Delay shootScript;
     private CharMovements moveScript;
+    public ActivateFireEffect effectScript;
     private SpriteRenderer SpriteBody;
     private SpriteRenderer SpriteGun;
 
     void Start()
     {
-        shootScript = GetComponentInChildren<Disparo>();
+        shootScript = GetComponentInChildren<Disparo_Delay>();
         moveScript = GetComponent<CharMovements>();
         SpriteBody = GetComponent<SpriteRenderer>();
         SpriteGun = Gun.GetComponentInChildren<SpriteRenderer>();
@@ -26,6 +27,7 @@ public class StartingConversation : MonoBehaviour
         SpriteGun.enabled = false;
         moveScript.canMove = false;
         shootScript.canShoot = false;
+        effectScript.canShoot = false;
         yield return new WaitForSeconds(47f);
         SpriteBody.enabled = true;
         yield return new WaitForSeconds(1f);
@@ -33,5 +35,6 @@ public class StartingConversation : MonoBehaviour
         yield return new WaitForSeconds(1f);
         moveScript.canMove = true;
         shootScript.canShoot = true;
+        effectScript.canShoot = true;
     }
 }

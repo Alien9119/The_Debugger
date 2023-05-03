@@ -8,8 +8,9 @@ public class Player_Invasion : MonoBehaviour
     public GameObject Gun;
     public GameObject InvasionTrigger;
 
-    private Disparo shootScript;
+    private Disparo_Delay shootScript;
     private CharMovements moveScript;
+    public ActivateFireEffect effectScript;
 
     private bool PlayerDetected;
     private bool x;
@@ -18,7 +19,7 @@ public class Player_Invasion : MonoBehaviour
     {
         x = true;
         InvasionTrigger = GameObject.Find("Invasion_Trigger");
-        shootScript = GetComponentInChildren<Disparo>();
+        shootScript = GetComponentInChildren<Disparo_Delay>();
         moveScript = GetComponent<CharMovements>();
     }
 
@@ -39,8 +40,14 @@ public class Player_Invasion : MonoBehaviour
     {
         moveScript.canMove = false;
         shootScript.canShoot = false;
+<<<<<<< Updated upstream
         yield return new WaitForSeconds(7f);
+=======
+        effectScript.canShoot = false;
+        yield return new WaitForSeconds(17f);
+>>>>>>> Stashed changes
         moveScript.canMove = true;
         shootScript.canShoot = true;
+        effectScript.canShoot = true;
     }
 }

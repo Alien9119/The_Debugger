@@ -5,9 +5,11 @@ using UnityEngine;
 public class Detector : MonoBehaviour
 { 
     public bool playerDetected;
+    private Collider2D detectorCollider;
 
     void Start()
     {
+        detectorCollider = GetComponent<Collider2D>();
         playerDetected = false;
     }
 
@@ -16,6 +18,7 @@ public class Detector : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerDetected = true;
+            detectorCollider.enabled = false;
         }
     }
 }

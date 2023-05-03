@@ -12,6 +12,6 @@ public class BotonJugar : MonoBehaviour
 {
     public void RunGame()
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("StartingGame");
     }
 }

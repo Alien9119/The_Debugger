@@ -7,7 +7,9 @@ using TMPro;
 public class UI_StartingConversation : MonoBehaviour
 {
     public Image StatusBar;
-    public Image HP;
+    public Image HP_Bar;
+    public Image HP_Border;
+    public Image Pause;
     public RawImage DialoguePanelPlayer;
     public RawImage DialoguePanelAI;
     private TMP_Text messageText;
@@ -21,7 +23,9 @@ public class UI_StartingConversation : MonoBehaviour
     IEnumerator EventsTimeline()
     {
         StatusBar.enabled = false;
-        HP.enabled = false;
+        HP_Bar.enabled = false;
+        HP_Border.enabled = false;
+        Pause.enabled = false;
 
         yield return new WaitForSeconds(4f);
 
@@ -72,6 +76,8 @@ public class UI_StartingConversation : MonoBehaviour
         messageText.enabled = false;
         DialoguePanelAI.enabled = false;
         StatusBar.enabled = true;
-        HP.enabled = true;
+        HP_Bar.enabled = true;
+        HP_Border.enabled = true;
+        Pause.enabled = true;
     }
 }
